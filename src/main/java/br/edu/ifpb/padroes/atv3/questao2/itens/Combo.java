@@ -19,7 +19,7 @@ public class Combo implements Item{
 
     @Override
     public String getDescription() {
-        return itens.stream().map(Item::getDescription).collect(Collectors.joining(", "));
+        return "\nCombo description: " +itens.stream().map(Item::getDescription).collect(Collectors.joining(", "));
     }
 
     @Override
